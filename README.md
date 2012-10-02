@@ -7,6 +7,9 @@ Pomodoro Scripts
 * Disables "Notification Center" notifications
 * Sets "Messages" status to 'Away' with status message
 * Sets "Skype" status to 'Do Not Disturb' with mood message
+* Creates 'Pomodoro' event in "Calendar" with 'Busy' status,
+  so it could be used with [AutoSilent.app](http://itunes.apple.com/us/app/autosilent/id474777148?mt=8)
+  for iPhone
 
 #### 'End' script
 * Enables "Notification Center" notifications and shows notifications panel
