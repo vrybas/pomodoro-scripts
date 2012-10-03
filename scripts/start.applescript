@@ -8,12 +8,12 @@ end tell
 
 tell application "Messages"
     set status to away
-    set status message to "Busy. Available in $duration min. Leave a message or use oDesk Team Chat"
+    set status message to "Busy. Available in $duration min. Leave a message"
 end tell
 
 tell application "Skype"
     send command "SET USERSTATUS DND" script name "pomodoro"
-    send command "SET PROFILE MOOD_TEXT Busy. Available in $duration min. Leave a message or use oDesk Team Chat" script name "pomodoro"
+    send command "SET PROFILE MOOD_TEXT Busy. Available in $duration min. Leave a message" script name "pomodoro"
 end tell
 
 set theDate to (current date)
