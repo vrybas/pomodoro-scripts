@@ -29,3 +29,7 @@ tell application "Calendar"
         end tell        
     end tell
 end tell
+
+tell application "BreakTime"
+  set enabled to not enabled
+end tell
