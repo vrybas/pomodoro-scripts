@@ -15,7 +15,3 @@ tell application "Skype"
   send command "SET USERSTATUS ONLINE" script name "pomodoro"
   send command "SET PROFILE MOOD_TEXT " script name "pomodoro"
 end tell
-
-tell application "BreakTime"
-  set enabled to not enabled
-end tell
