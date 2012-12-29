@@ -55,3 +55,7 @@ delay 1
 tell application "BreakTime"
   set enabled to not enabled
 end tell
+
+delay 1
+
+do shell script "curl -u au8th0rizat0iont090o0ken:X -H 'Content-Type: application/json' -d '{\"message\":{\"body\":\"Working on *$pomodoroName*. Available in $duration min.\"}}' https://subdomain.campfirenow.com/room/1234/speak.json"
