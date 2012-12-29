@@ -6,15 +6,21 @@ tell application "System Events"
     end tell
 end tell
 
+delay 1
+
 tell application "Messages"
     set status to away
     set status message to "Busy. Available in $duration min. Leave a message"
 end tell
 
+delay 1
+
 tell application "Skype"
     send command "SET USERSTATUS DND" script name "pomodoro"
     send command "SET PROFILE MOOD_TEXT Busy. Available in $duration min. Leave a message" script name "pomodoro"
 end tell
+
+delay 1
 
 set theDate to (current date)
 tell application "Calendar"
