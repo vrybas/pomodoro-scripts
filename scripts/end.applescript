@@ -15,3 +15,6 @@ tell application "Skype"
   send command "SET USERSTATUS ONLINE" script name "pomodoro"
   send command "SET PROFILE MOOD_TEXT " script name "pomodoro"
 end tell
+
+do shell script "curl -u au8th0rizat0iont090o0ken:X -H 'Content-Type: application/json' -d '{\"message\":{\"body\":\"Available.\"}}' https://subdomain.campfirenow.com/room/1234/speak.json"
+
