@@ -36,6 +36,22 @@ tell application "Calendar"
     end tell
 end tell
 
+delay 1
+
+tell application "oDesk Team" to activate
+tell application "System Events"
+	tell process "oDesk Team"
+		click menu item "Memo..." of menu "Status" of menu bar 1
+		delay 1
+		tell application "System Events" to keystroke tab
+		tell application "System Events" to keystroke "$pomodoroName"
+		delay 1
+		click button "Start" of window "oDesk Team - Memo"
+	end tell
+end tell
+
+delay 1
+
 tell application "BreakTime"
   set enabled to not enabled
 end tell
