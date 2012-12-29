@@ -20,7 +20,7 @@ set theDate to (current date)
 tell application "Calendar"
     tell calendar "Work"        
         set timeString to time string of theDate
-        set newEvent to make new event at end with properties { description:"", summary:"Pomodoro", location:"", start date:theDate, end date:theDate + $duration * minutes, allday event:false, status:confirmed}
+        set newEvent to make new event at end with properties { description:"", summary:"$pomodoroName", location:"", start date:theDate, end date:theDate + $duration * minutes, allday event:false, status:confirmed}
         tell newEvent
             delete every display alarm
             delete every sound alarm
