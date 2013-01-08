@@ -24,7 +24,7 @@ delay 1
 
 set theDate to (current date)
 tell application "Calendar"
-    tell calendar "Work"        
+    tell calendar "Work"
         set timeString to time string of theDate
         set newEvent to make new event at end with properties { description:"", summary:"$pomodoroName", location:"", start date:theDate, end date:theDate + $duration * minutes, allday event:false, status:confirmed}
         tell newEvent
@@ -32,7 +32,7 @@ tell application "Calendar"
             delete every sound alarm
             delete every mail alarm
             delete every open file alarm
-        end tell        
+        end tell
     end tell
 end tell
 
@@ -48,6 +48,12 @@ tell application "System Events"
 		delay 1
 		click button "Start" of window "oDesk Team - Memo"
 	end tell
+end tell
+
+delay 1
+
+tell application "BreakTime"
+  set enabled to not enabled
 end tell
 
 delay 1
