@@ -1,7 +1,7 @@
 Pomodoro AppleScripts
 ================
 
-### This is a set of scripts for [Pomodoro](https://github.com/ugol/pomodoro) by @ugol
+### This is a set of scripts for [Pomodoro](https://github.com/ugol/pomodoro) OSX application by @ugol
 (precompiled version available in [downloads](https://github.com/vrybas/pomodoro-scripts/downloads))
 
 #### 'Start' script
