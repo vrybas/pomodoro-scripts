@@ -1,8 +1,8 @@
-Pomodoro AppleScripts
+Pomodoro Scripts
 ================
 
 ### This is a set of scripts for [Pomodoro](https://github.com/ugol/pomodoro) OSX application by @ugol
-(precompiled version available in [downloads](https://github.com/vrybas/pomodoro-scripts/downloads))
+(precompiled version available [here](http://cl.ly/3Q3H333y2132))
 
 #### 'Start' script (just comment out anything you don't need)
 * Disables "Notification Center" notifications
