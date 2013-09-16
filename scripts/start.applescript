@@ -46,8 +46,11 @@ tell application "System Events"
 		tell application "System Events" to keystroke tab
 		tell application "System Events" to keystroke "$pomodoroName"
 		delay 1
-		click button "Start" of window "oDesk Team - Memo"
-		click button "OK" of window "oDesk Team - Memo"
+    if (button "Start" of window "oDesk Team - Memo") exists then
+      click button "Start" of window "oDesk Team - Memo"
+    else
+      click button "OK" of window "oDesk Team - Memo"
+    end if
 	end tell
 end tell
 
